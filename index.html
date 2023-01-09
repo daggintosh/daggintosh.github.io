@@ -1,1 +1,18 @@
-Hello, world
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DaggQuest</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h3>Welcome to DaggQuest, more to come!</h3>
+        <img id="fox" alt="A random fox from randomfox.ca"/>
+    </body>
+    <script>
+        let img = document.getElementById("fox");
+        fetch("https://randomfox.ca/floof")
+            .then(res => res.json())
+            .then(res => img.src = res.image)
+            .catch(err => console.error(err));
+    </script>
+</html>
