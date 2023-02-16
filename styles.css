@@ -3,7 +3,8 @@
     background-color: rgb(30, 35, 48);
     color: rgb(219, 219, 219);
     padding-left: 1vh;
+    text-align: center;
 }
 img {
-    max-height: 50vh;
+    height: 75vh;
 }
