@@ -9,4 +9,5 @@ img {
     height: 75vh;
     width: 100vw;
     object-fit: contain;
+    object-position: top;
 }
