@@ -1,1 +1,0 @@
-# [kyzune](https://www.kyzune.com) Landing Page
