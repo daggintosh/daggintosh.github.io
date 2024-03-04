@@ -20,7 +20,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 .title h1 {
