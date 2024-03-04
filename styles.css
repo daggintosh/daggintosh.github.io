@@ -1,28 +1,61 @@
 * {
     overflow: hidden;
-    font-family: system-ui;
-    background-color: rgb(15, 16, 20);
-    color: rgb(200, 200, 200);
-    text-align: center;
     margin: 0;
 }
-div {
-    height: 75vh;
-    width: 100vw;
-    justify-content: center;
+
+a {
+    color: #eee;
+    text-decoration: none;
+}
+
+body {
+    color: #eee;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: #050505;
+    text-align: center;
+}
+
+.whatsthediv {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.title h1 {
+    margin: 0 16px 0 16px;
+    text-align: left;
+}
+.title {
+    margin: 16px 16px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+}
+.title a {
+    margin: 0 8px 0 8px;
+}
+.title a:not(.noef):hover {
+    text-decoration: underline;
+}
+
+.wel {
+    margin-left: auto;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
 }
 img {
+    margin: 16px;
+    margin-top: 96px;
+    width: 100vw;
     height: auto;
-    width: 100%;
     object-fit: contain;
     animation: fade 1s ease-out;
     animation-play-state: paused;
-}
-.wel {
-    padding-inline: 1%; 
-    padding-top: 1%;
 }
 
 @keyframes fade {
