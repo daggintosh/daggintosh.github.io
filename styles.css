@@ -1,31 +1,13 @@
 * {
     overflow: hidden;
-    font-family: system-ui;
-    background-color: rgb(15, 16, 20);
-    color: rgb(200, 200, 200);
-    text-align: center;
-    margin: 0;
-}
-div {
-    height: 75vh;
-    width: 100vw;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
-img {
-    height: auto;
-    width: 100%;
-    object-fit: contain;
-    animation: fade 1s ease-out;
-    animation-play-state: paused;
-}
-.wel {
-    padding-inline: 1%; 
-    padding-top: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000;
+    color: #eee;
 }
 
-@keyframes fade {
-    0% {opacity: 0%;}
-    100% {opacity: 100%;}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
