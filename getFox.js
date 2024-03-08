@@ -16,7 +16,6 @@ function firstLoad() {
 function fixHeight() {
     let offset = (100 * header.offsetHeight) / window.innerHeight
     container.style.height = `${100 - offset}vh`
-    console.log(header.offsetHeight);
 }
 
 function getFox() {
