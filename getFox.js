@@ -4,9 +4,7 @@ img.addEventListener("load", () => img.style.animationPlayState = "running")
 let header = document.getElementById("header");
 let container = document.getElementById("container")
 
-addEventListener("resize", () => {
-    fixHeight()
-})
+addEventListener("resize", () => fixHeight())
 
 function firstLoad() {
     fixHeight()
