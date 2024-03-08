@@ -2,21 +2,20 @@
 <html lang="en-US">
 
 <head>
-    <link rel="preload" crossOrigin as="fetch" type="application/json" href="https://randomfox.ca/floof/" />
     <link rel="stylesheet" href="styles.css" />
     <title>Kyzune</title>
     <meta property="og:title" content="Kyzune" />
     <meta property="og:description" content="kyzune.com" />
-    <meta name="description" content="kyzune.com">
+    <meta name="description" content="kyzune.com" />
     <meta property="og:image" content="https://kyzune.com/assets/logo-full.png" />
     <meta name="viewport" content="width=device-width" />
 </head>
 
-<body onpageshow="getFox()">
-    <div class="whatsthediv">
+<body onpageshow="firstLoad()">
+    <div id="header" class="header">
         <div class="title">
             <h1><a class="noef" href="">Kyzune</a></h1>
-            <img onclick="getFox()" src="assets/refresh.svg" class="wel"/>
+            <img onclick="getFox()" src="assets/refresh.svg" class="wel" />
             <p class="wel"><a href="https://randomfox.ca">Image Source</a></p>
             <a href="https://github.com/daggintosh/daggintosh.github.io">GitHub</a>
         </div>
@@ -27,4 +26,5 @@
     </div>
 </body>
 <script type="text/javascript" src="getFox.js"></script>
+
 </html>
