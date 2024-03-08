@@ -27,6 +27,13 @@ body {
     margin: 0 16px 0 16px;
     text-align: left;
 }
+.title img {
+    width: 1.5em;
+}
+.title img:hover {
+    cursor:pointer;
+}
+
 .title {
     margin: 8px 8px;
     display: flex;
@@ -49,7 +56,7 @@ body {
     width: 100vw;
 }
 
-img {
+.fox {
     filter: drop-shadow(0 0 10px #000);
     margin: 16px;
     margin-top: 80px;
