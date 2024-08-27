@@ -15,8 +15,17 @@
     <div id="header" class="header">
         <div class="title">
             <h1><a class="noef" href="">Kyzune</a></h1>
-            <img onclick="getFox()" src="assets/refresh.svg" class="wel" />
-            <p class="wel"><a href="https://randomfox.ca">Image Source</a></p>
+            <img onclick="getFox()" src="assets/reload.svg" class="wel" />
+            <div class="menu">
+                <a href="https://randomfox.ca">Image Source</a>
+                <a rel="me" href="https://social.kyzune.com/@Dagg">Mastodon</a>
+                <a href="https://github.com/daggintosh/daggintosh.github.io">Website Source</a>
+                <a href="https://git.kyzune.com/users/sign_in">Log In</a>
+            </div>
+            <img class="menuBtn" onclick="QuickMenu()" src="assets/menu.svg"/>
+        </div>
+        <div class="menuExp" id="menuExp">
+            <a href="https://randomfox.ca">Image Source</a>
             <a rel="me" href="https://social.kyzune.com/@Dagg">Mastodon</a>
             <a href="https://github.com/daggintosh/daggintosh.github.io">Website Source</a>
             <a href="https://git.kyzune.com/users/sign_in">Log In</a>
@@ -28,5 +37,6 @@
     </div>
 </body>
 <script type="text/javascript" src="getFox.js"></script>
+<script type="text/javascript" src="quickMenu.js"></script>
 
 </html>

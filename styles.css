@@ -20,7 +20,7 @@ body {
 }
 
 .title h1 {
-    margin: 0 16px 0 16px;
+    margin: 0 auto 0 16px;
     text-align: left;
 }
 .title img {
@@ -29,21 +29,59 @@ body {
 .title img:hover {
     cursor:pointer;
 }
-
-.title {
+.title, .menu{
     margin: 8px 8px;
     display: flex;
     align-items: center;
 }
-.title a {
-    margin: 0 8px 0 8px;
-}
-.title a:not(.noef):hover {
+
+.menu a:hover, .menuExp a:hover {
     text-decoration: underline;
 }
 
+.menu, .menuExp, .title a {
+    margin: 0 8px 0 8px;
+}
+
+.menuBtn {
+    margin-right: 16px;
+}
+
+.menuExp {
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .menuBtn {
+        display: none;
+    }
+    .menuExp {
+        display: none !important;
+    }
+}
+
+.menuExp a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: right;
+}
+
+@media (max-width: 899px) {
+    .menu {
+        display: none;
+    }
+    .menuExp {
+        display: none;
+        flex-direction: column;
+    }
+}
+
 .wel {
+    position: absolute;
     margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 .container {
